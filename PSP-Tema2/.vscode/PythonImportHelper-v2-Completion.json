@@ -1,0 +1,348 @@
+[
+    {
+        "label": "pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pipe",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Process",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pipe",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "Ejemplos.Ejemplo",
+        "description": "Ejemplos.Ejemplo",
+        "peekOfCode": "def square(number):\n    return number*number\nif __name__ == \"main\":\n    with pool(processes=3) as pool:\n        numbers=[1,2,3,4,5]\n        results = pool.map(square,numbers)\n        print(\"Resultados: \", results)",
+        "detail": "Ejemplos.Ejemplo",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_numeros",
+        "kind": 2,
+        "importPath": "Ejemplos.Ejemplo2",
+        "description": "Ejemplos.Ejemplo2",
+        "peekOfCode": "def sumar_numeros(numero : int)  -> None:\n    print(f\"[HIJO] Hola {numero}. PID={os.getpid()}\")\nif __name__ == \"__main__\":\n    print(f\"[PADRE] PID={os.getpid()}\")\n    p = Process(target = sumar_numeros,args=(1,))\n    inicio = time.perf_counter()\n    p.start()\n    p.join()\n    fin = time.perf_counter()\n    tiempo_proceso = fin - inicio",
+        "detail": "Ejemplos.Ejemplo2",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma",
+        "kind": 2,
+        "importPath": "Ejercicios.Ejercicio1",
+        "description": "Ejercicios.Ejercicio1",
+        "peekOfCode": "def calcular_suma(numero: int) -> int:\n    \"\"\"\n    Calcula la suma de 1 hasta numero usando la fórmula matemática\n    Fórmula: n * (n + 1) / 2\n    \"\"\"\n    return numero * (numero + 1) // 2\ndef sumar_numeros(numero: int):\n    \"\"\"\n    Calcula y muestra la suma de 1 hasta numero\n    Ejecutado en un proceso separado",
+        "detail": "Ejercicios.Ejercicio1",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_numeros",
+        "kind": 2,
+        "importPath": "Ejercicios.Ejercicio1",
+        "description": "Ejercicios.Ejercicio1",
+        "peekOfCode": "def sumar_numeros(numero: int):\n    \"\"\"\n    Calcula y muestra la suma de 1 hasta numero\n    Ejecutado en un proceso separado\n    \"\"\"\n    total = calcular_suma(numero)\n    print(f\"Suma hasta {numero} = {total}\")\n    return total\nif __name__ == \"__main__\":\n    \"\"\"",
+        "detail": "Ejercicios.Ejercicio1",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma",
+        "kind": 2,
+        "importPath": "Ejercicios.Ejercicio2",
+        "description": "Ejercicios.Ejercicio2",
+        "peekOfCode": "def calcular_suma(numero: int) -> int:\n    \"\"\"\n    Calcula la suma de 1 hasta numero usando la fórmula matemática\n    Fórmula: n * (n + 1) / 2\n    \"\"\"\n    return numero * (numero + 1) // 2\ndef sumar_numeros(numero: int):\n    \"\"\"\n    Calcula y muestra la suma de 1 hasta numero\n    Ejecutado por un worker del Pool",
+        "detail": "Ejercicios.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_numeros",
+        "kind": 2,
+        "importPath": "Ejercicios.Ejercicio2",
+        "description": "Ejercicios.Ejercicio2",
+        "peekOfCode": "def sumar_numeros(numero: int):\n    \"\"\"\n    Calcula y muestra la suma de 1 hasta numero\n    Ejecutado por un worker del Pool\n    \"\"\"\n    total = calcular_suma(numero)\n    print(f\"Suma hasta {numero} = {total}\")\n    return total\nif __name__ == \"__main__\":\n    \"\"\"",
+        "detail": "Ejercicios.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "leer_numeros",
+        "kind": 2,
+        "importPath": "Ejercicio3",
+        "description": "Ejercicio3",
+        "peekOfCode": "def leer_numeros(fichero: str, cola: Queue):\n    \"\"\"\n    Proceso 1: Lectura de números desde fichero\n    - Lee cada línea del fichero\n    - Convierte a entero y añade a la cola\n    - Envía None al finalizar (señal de terminación)\n    \"\"\"\n    print(f\"[Lector] Leyendo fichero: {fichero}\")\n    try:\n        with open(fichero, 'r') as f:",
+        "detail": "Ejercicio3",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma",
+        "kind": 2,
+        "importPath": "Ejercicio3",
+        "description": "Ejercicio3",
+        "peekOfCode": "def calcular_suma(numero: int) -> int:\n    \"\"\"\n    Calcula la suma de 1 hasta numero usando la fórmula matemática\n    Fórmula: n * (n + 1) / 2\n    \"\"\"\n    return numero * (numero + 1) // 2\ndef sumar_numeros(cola: Queue):\n    \"\"\"\n    Proceso 2: Procesamiento de números\n    - Lee números de la cola",
+        "detail": "Ejercicio3",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_numeros",
+        "kind": 2,
+        "importPath": "Ejercicio3",
+        "description": "Ejercicio3",
+        "peekOfCode": "def sumar_numeros(cola: Queue):\n    \"\"\"\n    Proceso 2: Procesamiento de números\n    - Lee números de la cola\n    - Calcula la suma de 1 hasta ese número\n    - Termina al recibir None\n    \"\"\"\n    print(\"[Sumador] Esperando números...\")\n    numero = cola.get()\n    # Procesar números hasta recibir None",
+        "detail": "Ejercicio3",
+        "documentation": {}
+    },
+    {
+        "label": "leer_numeros",
+        "kind": 2,
+        "importPath": "Ejercicio4",
+        "description": "Ejercicio4",
+        "peekOfCode": "def leer_numeros(fichero: str, conexion):\n    \"\"\"\n    Proceso 1: Lectura de números desde fichero\n    - Lee cada línea del fichero\n    - Envía números por el Pipe\n    - Envía None al finalizar (señal de terminación)\n    - Cierra su extremo del Pipe\n    \"\"\"\n    print(f\"[Lector] Leyendo fichero: {fichero}\")\n    try:",
+        "detail": "Ejercicio4",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma",
+        "kind": 2,
+        "importPath": "Ejercicio4",
+        "description": "Ejercicio4",
+        "peekOfCode": "def calcular_suma(numero: int) -> int:\n    \"\"\"\n    Calcula la suma de 1 hasta numero usando la fórmula matemática\n    Fórmula: n * (n + 1) / 2\n    \"\"\"\n    return numero * (numero + 1) // 2\ndef sumar_numeros(conexion):\n    \"\"\"\n    Proceso 2: Procesamiento de números\n    - Recibe números del Pipe",
+        "detail": "Ejercicio4",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_numeros",
+        "kind": 2,
+        "importPath": "Ejercicio4",
+        "description": "Ejercicio4",
+        "peekOfCode": "def sumar_numeros(conexion):\n    \"\"\"\n    Proceso 2: Procesamiento de números\n    - Recibe números del Pipe\n    - Calcula la suma de 1 hasta ese número\n    - Termina al recibir None\n    - Cierra su extremo del Pipe\n    \"\"\"\n    print(\"[Sumador] Esperando números...\")\n    numero = conexion.recv()",
+        "detail": "Ejercicio4",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma_rango",
+        "kind": 2,
+        "importPath": "Ejercicio5",
+        "description": "Ejercicio5",
+        "peekOfCode": "def calcular_suma_rango(inicio: int, fin: int) -> int:\n    \"\"\"\n    Calcula la suma de un rango usando la fórmula matemática\n    Suma de a hasta b = (suma de 1 a b) - (suma de 1 a a-1)\n    Fórmula: n*(n+1)/2\n    \"\"\"\n    return (fin * (fin + 1) // 2) - ((inicio - 1) * inicio // 2)\ndef sumar_rango(valor1: int, valor2: int):\n    \"\"\"\n    Calcula y muestra la suma de números entre valor1 y valor2",
+        "detail": "Ejercicio5",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_rango",
+        "kind": 2,
+        "importPath": "Ejercicio5",
+        "description": "Ejercicio5",
+        "peekOfCode": "def sumar_rango(valor1: int, valor2: int):\n    \"\"\"\n    Calcula y muestra la suma de números entre valor1 y valor2\n    - Acepta valores en cualquier orden (valor1 > valor2 o viceversa)\n    - Usa fórmula matemática para eficiencia\n    \"\"\"\n    # Ordenar valores\n    inicio = min(valor1, valor2)\n    fin = max(valor1, valor2)\n    # Calcular suma",
+        "detail": "Ejercicio5",
+        "documentation": {}
+    },
+    {
+        "label": "leer_pares_numeros",
+        "kind": 2,
+        "importPath": "Ejercicio6",
+        "description": "Ejercicio6",
+        "peekOfCode": "def leer_pares_numeros(fichero: str, cola: Queue):\n    \"\"\"\n    Proceso 1: Lectura de pares de números desde fichero\n    - Lee líneas con formato: \"numero1 numero2\"\n    - Envía tuplas (valor1, valor2) a la cola\n    - Envía None al finalizar\n    \"\"\"\n    print(f\"[Lector] Leyendo fichero: {fichero}\")\n    try:\n        with open(fichero, 'r') as f:",
+        "detail": "Ejercicio6",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma_rango",
+        "kind": 2,
+        "importPath": "Ejercicio6",
+        "description": "Ejercicio6",
+        "peekOfCode": "def calcular_suma_rango(inicio: int, fin: int) -> int:\n    \"\"\"\n    Calcula la suma de un rango usando la fórmula matemática\n    Fórmula: suma(a,b) = suma(1,b) - suma(1,a-1)\n    donde suma(1,n) = n*(n+1)/2\n    \"\"\"\n    return (fin * (fin + 1) // 2) - ((inicio - 1) * inicio // 2)\ndef sumar_rangos(cola: Queue):\n    \"\"\"\n    Proceso 2: Procesamiento de pares de números",
+        "detail": "Ejercicio6",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_rangos",
+        "kind": 2,
+        "importPath": "Ejercicio6",
+        "description": "Ejercicio6",
+        "peekOfCode": "def sumar_rangos(cola: Queue):\n    \"\"\"\n    Proceso 2: Procesamiento de pares de números\n    - Recibe tuplas (valor1, valor2) de la cola\n    - Calcula suma entre esos valores\n    - Termina al recibir None\n    \"\"\"\n    print(\"[Sumador] Esperando pares...\")\n    datos = cola.get()\n    # Procesar pares hasta recibir None",
+        "detail": "Ejercicio6",
+        "documentation": {}
+    },
+    {
+        "label": "leer_pares_numeros",
+        "kind": 2,
+        "importPath": "Ejercicio7",
+        "description": "Ejercicio7",
+        "peekOfCode": "def leer_pares_numeros(fichero: str, conexion):\n    \"\"\"\n    Proceso 1: Lectura de pares de números desde fichero\n    - Lee líneas con formato: \"numero1 numero2\"\n    - Envía tuplas (valor1, valor2) por el Pipe\n    - Envía None al finalizar\n    - Cierra su extremo del Pipe\n    \"\"\"\n    print(f\"[Lector] Leyendo fichero: {fichero}\")\n    try:",
+        "detail": "Ejercicio7",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma_rango",
+        "kind": 2,
+        "importPath": "Ejercicio7",
+        "description": "Ejercicio7",
+        "peekOfCode": "def calcular_suma_rango(inicio: int, fin: int) -> int:\n    \"\"\"\n    Calcula la suma de un rango usando la fórmula matemática\n    Fórmula: suma(a,b) = suma(1,b) - suma(1,a-1)\n    donde suma(1,n) = n*(n+1)/2\n    \"\"\"\n    return (fin * (fin + 1) // 2) - ((inicio - 1) * inicio // 2)\ndef sumar_rangos(conexion):\n    \"\"\"\n    Proceso 2: Procesamiento de pares de números",
+        "detail": "Ejercicio7",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_rangos",
+        "kind": 2,
+        "importPath": "Ejercicio7",
+        "description": "Ejercicio7",
+        "peekOfCode": "def sumar_rangos(conexion):\n    \"\"\"\n    Proceso 2: Procesamiento de pares de números\n    - Recibe tuplas (valor1, valor2) del Pipe\n    - Calcula suma entre esos valores\n    - Termina al recibir None\n    - Cierra su extremo del Pipe\n    \"\"\"\n    print(\"[Sumador] Esperando pares...\")\n    datos = conexion.recv()",
+        "detail": "Ejercicio7",
+        "documentation": {}
+    },
+    {
+        "label": "leer_pares_fichero",
+        "kind": 2,
+        "importPath": "Ejercicio8",
+        "description": "Ejercicio8",
+        "peekOfCode": "def leer_pares_fichero(fichero: str) -> list:\n    \"\"\"\n    Lee pares de números de un fichero\n    - Formato: dos números por línea separados por espacio\n    - Retorna lista de tuplas [(valor1, valor2), ...]\n    \"\"\"\n    pares = []\n    try:\n        with open(fichero, 'r') as f:\n            for linea in f:",
+        "detail": "Ejercicio8",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_suma_rango",
+        "kind": 2,
+        "importPath": "Ejercicio8",
+        "description": "Ejercicio8",
+        "peekOfCode": "def calcular_suma_rango(inicio: int, fin: int) -> int:\n    \"\"\"\n    Calcula la suma de un rango usando la fórmula matemática\n    Fórmula: suma(a,b) = suma(1,b) - suma(1,a-1)\n    donde suma(1,n) = n*(n+1)/2\n    \"\"\"\n    return (fin * (fin + 1) // 2) - ((inicio - 1) * inicio // 2)\ndef sumar_rango(valor1: int, valor2: int):\n    \"\"\"\n    Calcula y muestra la suma entre valor1 y valor2",
+        "detail": "Ejercicio8",
+        "documentation": {}
+    },
+    {
+        "label": "sumar_rango",
+        "kind": 2,
+        "importPath": "Ejercicio8",
+        "description": "Ejercicio8",
+        "peekOfCode": "def sumar_rango(valor1: int, valor2: int):\n    \"\"\"\n    Calcula y muestra la suma entre valor1 y valor2\n    - Acepta valores en cualquier orden\n    - Usa fórmula matemática para eficiencia\n    - Ejecutado por un worker del Pool\n    \"\"\"\n    # Ordenar valores\n    inicio = min(valor1, valor2)\n    fin = max(valor1, valor2)",
+        "detail": "Ejercicio8",
+        "documentation": {}
+    }
+]
