@@ -1,0 +1,5 @@
+Este es un fichero de texto de ejemplo para contar vocales.
+Contiene varias lineas con diferentes palabras.
+El programa contara cuantas veces aparece cada vocal.
+Python es un lenguaje de programacion muy util.
+Los procesos paralelos permiten ejecutar tareas simultaneamente.

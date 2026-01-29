@@ -1,0 +1,20 @@
+El Padrino;1972
+Tiburon;1975
+Star Wars;1977
+Alien;1979
+El Resplandor;1980
+Blade Runner;1982
+Terminator;1984
+Regreso al Futuro;1985
+Akira;1988
+El Silencio de los Corderos;1991
+Pulp Fiction;1994
+El Gran Lebowski;1998
+Matrix;1999
+Gladiator;2000
+El Senor de los Anillos;2001
+Piratas del Caribe;2003
+Batman Begins;2005
+El Caballero Oscuro;2008
+Origen;2010
+Interstellar;2014
